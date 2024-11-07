@@ -11,14 +11,3 @@ class Log(models.Model):
     content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
     object_id = models.PositiveIntegerField()
     content_object = GenericForeignKey('content_type', 'object_id')
-
-
-"""
-Model Profile
-1 - ALi
-2 - Reza
-
-Model Log
-1 - Profile 2
-
-"""
